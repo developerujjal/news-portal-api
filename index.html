@@ -16,7 +16,7 @@
                 <div class="menu-wrapper">
                     <div class="menu-title-main">
                         <div class="menu-title-container">
-                            <h3>News</h3>
+                            <h3><a href="">News</a></h3>
                             <h3>Portal</h3>
                         </div>
                     </div>
@@ -39,27 +39,31 @@
             <div class="container">
                 <div class="category-and-foundSEC-container">
                     <div class="all-categoty">
-                        <ul>
-                            <li><a href="#">Ami</a></li>
+                        <ul id="category-main-list">
+                            <!-- <li><a href="#">Ami</a></li>
                             <li><a href="#">MiayRe</a></li>
                             <li><a href="#">Calture</a></li>
                             <li><a href="#">Main Point</a></li>
                             <li><a href="#">Chrome</a></li>
                             <li><a href="#">World News</a></li>
-                            <li><a href="#">Bookmarks</a></li>
+                            <li><a href="#">Bookmarks</a></li> -->
                         </ul>
                     </div>
                     <div class="found-section">
-                        <p><span>4</span> items found for category Entertainment</p>
+                        <p><span id="category-length">0</span> news found. Please read carefully all the stuff!</p>
                     </div>
+
+                    <div id="loaderSpinner" class="loading-spinner hidden">
+                        <div class="loader"></div>
+                    </div> 
                 </div>
             </div>
         </section>
 
         <section>
             <div class="container">
-                <div class="news-box-wrapper">
-                    <div class="news-singel-box-wrapper">
+                <div id="main-news-box" class="news-box-wrapper">
+             <!-- <div class="news-singel-box-wrapper">
                         <div class="news-img">
                             <img src="news01.png" alt="">
                         </div>
@@ -96,12 +100,47 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    
+
                 </div>
+
+                <div class="btn-showMore hidden">
+                    <button>See More</button>
+                </div>
+
+                <div id="myModal" class="modal hidden">
+
+                    <div class="modal-content">
+                        <div class="modal-product-details-container">
+                            <div class="modal-proudct-img">
+                                <!-- <img src="img/phone.png" alt=""> -->
+                            </div>
+                            <div class="modal-product-details">
+                                <!-- <h3>iPhone 13 Pro</h3>
+                                <p class="modal-des">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <p class="model-storage margin"><span> <span>Storage :</span> 128GB/256GB/1TB Storage, No card slot</span></p>
+                                <p class="modal-display margin"><span> <span>Display Size :</span> 6.7 Inches, 109.8 cm</span></p>
+                                <p class="modal-chipset margin"> <span> <span>Chipset :</span> Apple A15 Bionic</span> </p>
+                                <p class="modal-memory margin"><span> <span>Memory :</span> 128GB 6 GB RAM, 256GB RAM, 512GB RAM1 1TB 6GB RAM</span></p>
+                                <p class="modal-slug margin"><span> <span>Slug :</span> Applice_Iphone_13_Pro_Max</span></p>
+                                <p class="modal-release-data margin"><span> <span>Release data :</span> Released 2021, September 24</span></p>
+                                <p class="modal-brand margin"><span> <span>Brand :</span> Apple</span></p>
+                                <p class="model-gps margin"><span> <span>GPS :</span> AYes, with A-GPS, GLONASS, GALILEO, BDS, QZSS</span></p> -->
+                            </div>
+                            <div class="modal-btn-close btn-showMore">
+                                <button onclick="handleCloseBtn()" class="modal-close-btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
             </div>
         </section>
     </main>
+
+    <!-- Script -->
+     <script src="js/news-portal.js"></script>
 </body>
 </html>

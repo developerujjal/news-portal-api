@@ -38,17 +38,23 @@ body{
     display: flex;
 }
 
-.menu-title-container h3 {
+.menu-title-container h3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-title-container h3{
     font-size: 1rem;
     font-weight: 500;
     padding: 10px 12px;
     border-radius: 8px;
     cursor: pointer;
+
 }
 
 .menu-title-container h3:first-child{
     background-color: #5D5FEF;
-    color: white;
+
 }
 
 .menu-title-container h3:last-child{
@@ -159,6 +165,7 @@ body{
 
 .news-des-container {
     padding: 5px 35px;
+    width: 64%;
 }
 
 .only-news-des p {
@@ -224,7 +231,7 @@ body{
     transition: 0.3s;
 }
 
-.next-array:hover{
+.next-array:hover, .btn-showMore button:hover{
     background-color: #b8c2f5;
 }
 
@@ -234,6 +241,165 @@ body{
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
+
+
+
+.news-img {
+    width: 36%;
+}
+
+.news-img img {
+    width: 100%;
+    height: 325px;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.btn-showMore button {
+    background-color: #d0d8ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5D5FEF;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.btn-showMore {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+/* Loading spinner */
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid blue;
+    border-right: 8px solid green;
+    border-bottom: 8px solid red;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin: 0px auto;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loading-spinner {
+    margin-top: 15px;
+}
+
+
+
+/* Model */
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(57, 64, 71, 0.356);
+    overflow: auto;
+}
+
+/* .removeModel{
+    z-index: -1;
+    opacity: 0;
+}
+
+.modalShow{
+    z-index: 1;
+    opacity: 1;
+} */
+
+.modal-content {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-product-details-container {
+    width: 35%;
+    padding: 15px 18px;
+    background-color: white;
+}
+
+.modal-proudct-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0D6EFD0D;
+    padding: 27px 0px;
+    border-radius: 10px;
+}
+
+.modal-proudct-img img {
+    width: 45%;
+}
+
+.modal-product-details {
+    margin: 22px 0px 25px 0px;
+}
+
+.modal-product-details h3 {
+    font-size: 1.6rem;
+    color: #403F3F;
+}
+
+.modal-product-details .modal-des {
+    font-size: 0.875rem;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.modal-product-details p {
+    color: #706F6F;
+    margin-bottom: 4px;
+}
+
+.modal-product-details p span span {
+    font-weight: bold;
+}
+
+.modal-product-details p span{
+    font-size: 0.938rem;
+}
+
+.modal-product-details p:last-child{
+    margin-bottom: 0px;
+}
+
+.modal-btn-close {
+    text-align: right;
+}
+
+button.modal-close-btn {
+    background-color: #d0d8ff;
+    padding: 10px 26px;
+}
+
+button.modal-close-btn:hover{
+    background-color: #b8c2f5;
 }
 
 
