@@ -251,7 +251,7 @@ body{
 
 .news-img img {
     width: 100%;
-    height: 325px;
+    
 }
 
 .hidden{
@@ -404,6 +404,34 @@ button.modal-close-btn:hover{
 
 
 
+/* Search Bar */
+
+.searchBar {
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.searchBar input {
+    width: 40%;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.searchBar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    transform: translateX(-2px);
+}
+
+
+
+
+
+
 @media screen and (max-width: 640px){
     .container {
         max-width: 96%; /* Maximum width is 90% of the parent element */
@@ -438,13 +466,13 @@ button.modal-close-btn:hover{
     }
 
 
-    /* .news-img {
-        width: 50%;
+    .news-img {
+        width: 100%;
     }
     
     .news-img img {
         width: 100%;
-    } */
+    }
 
     .news-des-container{
         padding: 0px;
@@ -470,6 +498,20 @@ button.modal-close-btn:hover{
         flex-wrap: wrap;
         justify-content: space-evenly;
         gap: 20px;
+    }
+
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        position: unset;
+    }
+
+    .searchBar input{
+        width: 70%;
+    }
+
+    .searchBar button{
+        position: unset;
     }
 
 }
